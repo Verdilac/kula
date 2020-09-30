@@ -1,0 +1,308 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.mainContainerP1,
+.mainContainerP2,
+.mainContainerP3 {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+}
+.content {
+  position: relative;
+  top: 20%;
+}
+
+.contentP2,
+.contentP3 {
+  position: relative;
+  margin-top: 150px;
+}
+.prod1_slideshow {
+  position: relative;
+  top: 45%;
+}
+.p1img {
+  position: relative;
+  right: 20px;
+}
+.prod2_slideshow {
+  position: relative;
+  top: 45%;
+  left: -65px;
+}
+#slideS1 {
+  position: relative;
+  left: -90px;
+}
+
+.imgsec {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  border: 3px solid black;
+}
+
+/* product3 */
+.p3imgsec {
+  position: relative;
+  left: 945px;
+  bottom: 20%;
+}
+.contentP3 {
+  position: relative;
+  top: 20%;
+}
+
+.price {
+  font-weight: 10;
+  color: red;
+}
+
+.demo {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 10;
+  color: white;
+}
+
+.demo2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 10;
+  color: white;
+}
+
+body {
+  background: url(../images/Background.jpg);
+  background-size: cover;
+  background-attachment: scroll;
+}
+
+h1 {
+  text-align: center;
+
+  font-family: "Rye";
+  font-size: 60px;
+  color: #000000;
+  text-shadow: 2px 2px 4px white;
+}
+
+p {
+  text-align: center;
+  color: white;
+}
+
+body {
+  outline: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* h1 {	
+		text-align:center;
+		font-size:40px;
+		font-family:papyrus;
+		color:black;		
+	}   */
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+
+/*------------------------------------------------------------------------------------------------------ */
+
+/* login/register button */
+
+.regbutton {
+  background-color: #555555;
+  border-color: black;
+  border-radius: 12px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.regbutton1 {
+  background-color: #767675;
+  color: black;
+  float: right;
+}
+
+.regbutton1:hover {
+  background-color: #555555;
+  color: black;
+}
+
+/* --------------------------------------------------------------------------------------------------------------- */
+
+/* Navigation Bar */
+
+.ul1 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  font-family: sans-serif;
+  font-size: 12px;
+}
+
+.li1 {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 30px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: gray;
+}
+
+/*------------------------------------------------------------------------------------- */
+
+/*search bar */
+
+@import url("http://fonts.googleapis.com/css?family=Roboto");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.wrapper {
+  background: url("../images/pexels-ottonbro-4709822.jpg") no-repeat;
+  width: 100%;
+  height: 10vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search_box {
+  width: 10%;
+  position: relative;
+}
+
+.search_box input[type="text"] {
+  width: 400%;
+  padding: 5px;
+  padding-right: 60px;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.3);
+  border: 2px solid #fff;
+  border-radius: 10px;
+  font-size: 15px;
+  color: white;
+  outline: none;
+}
+
+::-webkit-input-placeholder {
+  color: gray;
+}
+
+::-moz-placeholder {
+  color: gray;
+}
+
+::-ms-input-placeholder {
+  color: gray;
+}
+
+/*==============================Slideshow in CSS===================================*/
+
+.slidershow {
+  width: 700px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.middle {
+  position: relative;
+  left: 400px;
+  top: 10px;
+  transform: translate(-50%, -50%);
+}
+
+.navigation {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+.bar {
+  width: 5px;
+  height: 5px;
+  border: 1px solid black;
+  margin: 6px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.bar:hover {
+  background: blue;
+}
+
+input[name="r"] {
+  position: absolute;
+  visibility: hidden;
+}
+
+.slides {
+  width: 500%;
+  height: 100%;
+  display: flex;
+}
+
+.slide {
+  width: 20%;
+  transition: 0.6s;
+}
+.slide img {
+  width: 60%;
+  height: 100%;
+}
+
+#r1:checked ~ .s1 {
+  margin-left: 0;
+}
+#r2:checked ~ .s1 {
+  margin-left: -20%;
+}
+#r3:checked ~ .s1 {
+  margin-left: -40%;
+}
+#r4:checked ~ .s1 {
+  margin-left: -60%;
+}
+#r5:checked ~ .s1 {
+  margin-left: -80%;
+}
